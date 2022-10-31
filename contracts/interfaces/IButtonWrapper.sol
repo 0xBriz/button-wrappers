@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
+pragma solidity 0.8.4;
 
 // Interface definition for ButtonWrapper contract, which wraps an
 // underlying ERC20 token into a new ERC20 with different characteristics.

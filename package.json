@@ -22,11 +22,10 @@
     "profile": "REPORT_GAS=true yarn hardhat test test/unit/*.ts",
     "coverage": "yarn hardhat coverage --testfiles 'test/unit/*.ts'",
     "format": "yarn prettier --config .prettierrc --write '**/*.ts' 'contracts/**/*.sol'",
-    "lint": "yarn solhint 'contracts/**/*.sol'"
+    "lint": "yarn solhint 'contracts/**/*.sol'",
+    "deploy": "npx hardhat run --network ./scripts/deploy.ts",
+    "build": "yarn hardhat compile"
   },
-  "pre-commit": [
-    "lint"
-  ],
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.1",
     "@nomiclabs/hardhat-etherscan": "^2.1.6",

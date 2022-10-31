@@ -55,7 +55,7 @@ contract StakeManager is
 
     /// @custom:oz-upgrades-unsafe-allow constructor
     constructor() {
-        _disableInitializers();
+        // _disableInitializers();
     }
 
     /**
@@ -396,7 +396,7 @@ contract StakeManager is
     function revokeBotRole(address _address) external override onlyManager {
         require(_address != address(0), "zero address provided");
 
-        _revokeRole(BOT, _address);
+        revokeRole(BOT, _address);
 
         emit RevokeBotRole(_address);
     }
